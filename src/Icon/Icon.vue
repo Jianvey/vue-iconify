@@ -105,7 +105,7 @@ function setStrokeAnimation() {
       return
     }
 
-    let $Icon = $symbol.cloneNode(true) as SVGSymbolElement
+    const $Icon = $symbol.cloneNode(true) as SVGSymbolElement
     $Icon.setAttribute("id", identifier)
     $symbol.parentNode?.insertBefore($Icon, $symbol.nextSibling)
     href.value = identifier
